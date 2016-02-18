@@ -36,10 +36,19 @@ $navbar-default-link-color: #fff;
   font-weight:bold;
 }
 
-.btn-xlg{
+.btn-xlarge{
   font-size:1.7em;
   background-color: black;
 
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 footer {
