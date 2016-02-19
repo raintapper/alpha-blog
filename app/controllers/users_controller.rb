@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if@user.save
     flash[:success] = "Welcome to NEST #{@user.username}"
-      redirect_to_articles_path
+      redirect_to articles_path
       else
       render'new'
 
