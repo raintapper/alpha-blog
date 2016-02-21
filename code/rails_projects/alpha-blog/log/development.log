@@ -2071,3 +2071,44 @@ Processing by CategoriesController#index as HTML
   Rendered layouts/_messages.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 54.251.49.8 at 2016-02-21 00:08:52 +0000
+Cannot render console from 54.251.49.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (71.7ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 402ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 54.251.49.8 at 2016-02-21 00:09:02 +0000
+Cannot render console from 54.251.49.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V7vD1sfNc/drKfYJKxKCGw8x5ujfhck0cSJkDTs99x239RfRQBgX0ccCYwBmLsQs/TiX2sgo8PUUAw86g9KDJQ==", "session"=>{"email"=>"john@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "john@example.com"]]
+  Rendered sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 600ms (Views: 455.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/categories/new" for 54.251.49.8 at 2016-02-21 00:09:19 +0000
+Cannot render console from 54.251.49.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#new as HTML
+Redirected to http://ruby-on-rails-alpha-blog-161175.nitrousapp.com:3000/categories
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 54.251.49.8 at 2016-02-21 00:09:19 +0000
+Cannot render console from 54.251.49.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  "categories".* FROM "categories" LIMIT 5 OFFSET 0
+  Rendered categories/index.html.erb within layouts/application (39.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 135ms (Views: 130.2ms | ActiveRecord: 1.1ms)
